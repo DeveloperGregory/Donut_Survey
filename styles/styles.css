@@ -1,0 +1,58 @@
+body{
+    margin: 0px;
+    background-image: url("https://daily.jstor.org/wp-content/uploads/2017/11/colorful_donuts_democracy_1050x700.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.survey{
+    margin: 5px;
+    width: 76%;
+}
+
+#background-shader{
+    background-color:rgba(0, 0, 0, 0.70);
+    max-width: 100%;
+    height: 800px;
+    z-index: 0;
+}
+
+#form-div{
+    background-color: silver;
+    border-radius: 3%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(255, 255, 255);
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.712);
+    height: 80%;
+    left: 10%;
+    position: fixed;
+    top:15%;
+    width: 80%;
+    z-index:3;
+}
+
+#description{
+    color: rgb(255, 255, 255);
+    font-size: 14pt;
+    position: relative;
+    top: -790px;
+    text-align: center;    
+}
+
+#survey-form{
+    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 20px;
+    width: 79%;
+}
+
+#title{
+    color: rgb(255, 255, 255);
+    font-size: 18pt;
+    position: relative;
+    top: -780px;
+    text-align: center;
+}
