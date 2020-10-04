@@ -7,9 +7,13 @@ body{
     
 }
 
+
+
 .survey{
-    margin: 5px;
-    width: 76%;
+    margin: 10px;
+    padding: 5px;
+    font-size: 12pt;
+    width: 70%;
 }
 
 #background-shader{
@@ -17,6 +21,16 @@ body{
     max-width: 100%;
     height: 800px;
     z-index: 0;
+}
+
+#check-boxes{
+    left: 50%;
+    margin: 5px;
+    padding: 5px;
+    position: relative;
+    text-align: justify;
+    top: -155px;
+    width: 45%;
 }
 
 #form-div{
@@ -30,7 +44,7 @@ body{
     left: 10%;
     position: fixed;
     top:15%;
-    width: 80%;
+    width: 85%;
     z-index:3;
 }
 
@@ -42,10 +56,21 @@ body{
     text-align: center;    
 }
 
+#glazed{
+    margin-top: 0px;
+}
+
+#radio-buttons{
+    
+    text-align: justify; 
+    width:200px;   
+}
+
 #survey-form{
-    background-color: rgb(255, 255, 255);
+    
     margin: auto;
     margin-top: 20px;
+    text-align: right;
     width: 79%;
 }
 
@@ -55,4 +80,10 @@ body{
     position: relative;
     top: -780px;
     text-align: center;
+}
+
+@media (min-width: 600px){
+    #form-div{
+        background-color: red;
+    }
 }
