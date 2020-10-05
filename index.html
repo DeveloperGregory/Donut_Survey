@@ -12,9 +12,9 @@
     <p id='description'>A survey form for our favorite breakfast time snack</p>
     <div id='form-div'>
         <form id='survey-form' action="" method="post">
-            <label id='name-label' for="name">Name<input class='survey' id='name' type="text" placeholder='Enter your name'></label>
-            <label id='email-label' for="email" >eMail<input class='survey' id='email' type="text" placeholder="Enter your e-mail"></label>
-            <label id='number-label' for="number">Phone #<input class='survey' id='number' type="text" placeholder='Enter your phone number'></label>
+            <label id='name-label' for="name">Name<input class='survey' id='name' type="text" placeholder='Enter your name'></label><br>
+            <label id='email-label' for="email" >eMail<input class='survey' id='email' type="text" placeholder="Enter your e-mail"></label><br>
+            <label id='number-label' for="number">Phone #<input class='survey' id='number' type="text" placeholder='Enter your phone number'></label><br>
             <label for="dropdown">How would you like us to contact you?</label>
             <select name="contact-choice" id="dropdown">
                 <option value="email">By Email only</option>
@@ -36,22 +36,25 @@
             </div>
             <div id="check-boxes">
                 <p class='instructions'>Choose your favorite types of Donuts</p><br>
-                <input class ='column1' type="checkbox" id='glazed' name='glazed-donut' value='glazed' >
-                <label class ='column1' for="glazed">Glazed</label><br>
-                <input class ='column1' type="checkbox" id='chocolate-glazed' name='chocolate-glazed' value='chocolate-glazed'>
-                <label class ='column1'for="chocolate-glazed">Chocolate Glazed</label><br>
-                <input class ='column1' type="checkbox" id='holes' name='donut-holes' value='holes'>
-                <label class ='column1'for="holes">Donut Holes</label><br>
-                <input class ='column2' type="checkbox" id='jelly' name='jelly-filled' value='jelly-filled'>
-                <label class ='column2' for="jelly">Jelly Filled</label><br>
-                <input class ='column2' type="checkbox" id='cream-filled' name='cream' value='cream-filled'>
-                <label class ='column2' for="cream-filled">Cream Filled</label><br>
-                <input class ='column2' type="checkbox" id='other' name='other' value="other">
-                <label class ='other' for="other">Other</label><br>
-                <input class = 'other' type="text" id='other-text' name='other-text' placeholder='Type your favorite'>
+                <input type="checkbox" id='glazed' name='glazed-donut' value='glazed' size="100" >
+                <label for="glazed">Glazed</label><br>
+                <input type="checkbox" id='chocolate-glazed' name='chocolate-glazed' value='chocolate-glazed'>
+                <label for="chocolate-glazed">Chocolate Glazed</label><br>
+                <input type="checkbox" id='holes' name='donut-holes' value='holes'>
+                <label for="holes">Donut Holes</label><br>
+                <input type="checkbox" id='jelly' name='jelly-filled' value='jelly-filled'>
+                <label for="jelly">Jelly Filled</label><br>
+                <input type="checkbox" id='cream-filled' name='cream' value='cream-filled'>
+                <label for="cream-filled">Cream Filled</label><br>
+                <input type="checkbox" id='other' name='other' value="other">
+                <label for="other">Other</label><br>
+                <input type="text" id='other-text' name='other-text' placeholder='Type your favorite'>
             </div>
-            <input type="text" id='textarea' placeholder="Additional Comments">
-            <button type='button' id='submit'>Submit Survey</button>
+            <input type="text" id='textarea' placeholder="Additional Comments" size="128"><br>
+            <div id='button'>
+                <button type='button' id='submit'>Submit Survey</button>
+            </div>
+            
         </form>
     </div>
     
