@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/styles.css">
-    <title>Document</title>
+    <title>Donut Lovers Association Great Donut Survey</title>
 </head>
 <body>
     <div id='background-shader'></div>
     <h1 id='title'>Donut Lovers Association Great Donut Survey</h1>
     <p id='description'>A survey form for our favorite breakfast time snack</p>
     <div id='form-div'>
-        <form id='survey-form' action="" method="post">
-            <label id='name-label' for="name">Name<input class='survey' id='name' type="text" placeholder='Enter your name'></label><br>
-            <label id='email-label' for="email" >eMail<input class='survey' id='email' type="text" placeholder="Enter your e-mail"></label><br>
-            <label id='number-label' for="number">Phone #<input class='survey' id='number' type="text" placeholder='Enter your phone number'></label><br>
+        <form id='survey-form' action="<script>alert('Submitted');</script>" method="post">
+            <label id='name-label' for="name">Name<input class='survey' id='name' type="text" placeholder='Enter your name' required></label><br>
+            <label id='email-label' for="email" >eMail<input class='survey' id='email' type="email" placeholder="Enter your e-mail" required></label><br>
+            <label id='number-label' for="number">Phone #<input class='survey' id='number' type="number" min="9" max="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder='Enter your phone number' required></label><br>
             <label for="dropdown">How would you like us to contact you?</label>
-            <select name="contact-choice" id="dropdown">
+            <select name="contact-choice" id="dropdown" >
                 <option value="email">By Email only</option>
                 <option value="phone">By Phone only</option>
                 <option value="both">Either is fine</option>
@@ -39,7 +39,7 @@
                 <input type="checkbox" id='glazed' name='glazed-donut' value='glazed' size="100" >
                 <label for="glazed">Glazed</label><br>
                 <input type="checkbox" id='chocolate-glazed' name='chocolate-glazed' value='chocolate-glazed'>
-                <label for="chocolate-glazed">Chocolate Glazed</label><br>
+                <label for="chocolate-glazed">Choc. Glazed</label><br>
                 <input type="checkbox" id='holes' name='donut-holes' value='holes'>
                 <label for="holes">Donut Holes</label><br>
                 <input type="checkbox" id='jelly' name='jelly-filled' value='jelly-filled'>
@@ -50,9 +50,10 @@
                 <label for="other">Other</label><br>
                 <input type="text" id='other-text' name='other-text' placeholder='Type your favorite'>
             </div>
-            <input type="text" id='textarea' placeholder="Additional Comments" size="128"><br>
+            <textarea name="comments" id="comment-area" cols="70" rows="4"></textarea><br>
+            
             <div id='button'>
-                <button type='button' id='submit'>Submit Survey</button>
+                <button type='submit' id='submit'>Submit Survey</button>
             </div>
             
         </form>
