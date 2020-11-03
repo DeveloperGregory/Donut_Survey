@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Donut Lovers Association Great Donut Survey</title>
+</head>
+<body>
+    <div class="fluid-container">
+        <div id='title' class='text-center'>
+            <h1>Donut Lovers Association Great Donut Survey</h1>
+        </div>
+        <div id='description' class='text-center'>
+            <h2>A survey form for our favorite breakfast time snack</h2>
+        </div>
+        <div id='form-div'>
+            <form id='survey-form' action="<script>alert('Submitted');</script>" method="post">
+                <div class='format-group'>
+                    <label id='name-label' for="name">Name<input class='survey form-control' id='name' type="text" placeholder='Enter your name' required></label>
+                </div>
+                <div class='format-group'>
+                    <label id='email-label' for="email" >eMail<input class='survey form-control' id='email' type="email" placeholder="Enter your e-mail" required></label>
+                </div>
+                <div class='format-group'>
+                    <label id='number-label' for="number">Phone #<input class='survey form-control' id='number' type="number" min="9" max="12" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder='Enter your phone number' required></label>
+                </div>
+                
+                <label for="dropdown">How would you like us to contact you?</label>
+                <select name="contact-choice" id="dropdown" >
+                    <option value="email">By Email only</option>
+                    <option value="phone">By Phone only</option>
+                    <option value="both">Either is fine</option>
+                </select>
+                <div id='radio-buttons'>
+                    <p>What is your age group?</p>
+                    <input type="radio" id='3to18' name='ages' value='3-18'>
+                    <label for="3-18">3-18 years old</label><br>
+                    <input type="radio" id='19to35' name='ages' value='19-35'>
+                    <label for="19-35">19-35 years old</label><br>
+                    <input type="radio" id='36to55' name='ages' value='36-55'>
+                    <label for="36-55">36-55 years old</label><br>
+                    <input type="radio" id='56to75' name='ages' value='56-75'>
+                    <label for="56-75">56-75 years old</label><br>
+                    <input type="radio" id='76+' name='ages' value='76+'>
+                    <label for="76+">76+ years old</label><br>
+                </div>
+                <div id="check-boxes">
+                    <p class='instructions'>Choose your favorite types of Donuts</p><br>
+                    <input type="checkbox" id='glazed' name='glazed-donut' value='glazed' size="100" >
+                    <label for="glazed">Glazed</label><br>
+                    <input type="checkbox" id='chocolate-glazed' name='chocolate-glazed' value='chocolate-glazed'>
+                    <label for="chocolate-glazed">Choc. Glazed</label><br>
+                    <input type="checkbox" id='holes' name='donut-holes' value='holes'>
+                    <label for="holes">Donut Holes</label><br>
+                    <input type="checkbox" id='jelly' name='jelly-filled' value='jelly-filled'>
+                    <label for="jelly">Jelly Filled</label><br>
+                    <input type="checkbox" id='cream-filled' name='cream' value='cream-filled'>
+                    <label for="cream-filled">Cream Filled</label><br>
+                    <input type="checkbox" id='other' name='other' value="other">
+                    <label for="other">Other</label><br>
+                    <input type="text" id='other-text' name='other-text' placeholder='Type your favorite'>
+                </div>
+                <textarea name="comments" id="comment-area" cols="70" rows="4"></textarea><br>
+            
+                <div id='button'>
+                    <button type='submit' id='submit'>Submit Survey</button>
+                </div>
+            
+        </form>
+    </div>
+    
+    
+    
+</body>
+</html>
