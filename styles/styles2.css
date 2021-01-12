@@ -8,6 +8,54 @@ body{
     
 }
 
+.form-div{
+    background-color: #FFD8AA;
+    margin-left: auto;
+    margin-right: auto;
+    width: 45%;
+}
 
+.headings{
+    color: #FFD8AA;
+}
+
+.instructions{
+    font-weight: bold;
+}
+
+.labels{
+    color:#552E00; 
+    font-weight: bold;
+}
+
+#check-boxes, #radio-buttons{
+    border-radius: 6px;
+    border-style: solid;
+    border-width: thin;
+    margin: 0px;
+}
+
+#comment-area{
+    margin: 10px 0px;
+}
+
+#form-div{
+    border-radius: 8px;
+    padding: 5px;
+}
+
+#radio-checks{
+    background-color: #FFE8CC;
+    border-radius: 5px;
+    border-style: inset;
+    margin: 0px;
+    padding: 5px 20px;
+}
+
+@media (max-width: 900px){
+    .form-div{
+        width: 80%;
+    }
+}
 
 
